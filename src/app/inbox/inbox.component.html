@@ -1,0 +1,13 @@
+<div class="inbox-container">
+    <h2>Inbox</h2>
+    <ul>
+        <li *ngFor="let email of emails">
+            <div>
+                <strong>{{ email.sender }}</strong>
+                <span>{{ email.subject }}</span>
+                <small>{{ email.date }}</small>
+            </div>
+            <p>{{ email.snippet }}</p>
+        </li>
+    </ul>
+</div>
